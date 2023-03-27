@@ -5,7 +5,7 @@ const SignIn : FC = ()=> {
   return (
     <div className="absolute inset-0 text-white flex items-center justify-center bg-SignInBg bg-cover bg-center">
       <div className="h-screen w-full text-white flex items-center justify-center">
-        <div className="flex flex-col items-center justify-center bg-primary py-4vh rounded-lg drop-shadow-2xl">
+        <div className="flex flex-col items-center justify-center bg-primaryDark py-4vh rounded-lg drop-shadow-2xl">
           <h1 className="text-3xl pb-2">Welcome!</h1>
           <p className="md:px-7vw">We are excited to see you!</p>
           <form className="py-2vh px-2vw">
