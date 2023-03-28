@@ -16,7 +16,8 @@ module.exports = {
         secondary:"#fe3823",
       },
       backgroundImage: {
-        'SignInBg': "url('/SignInBg.jpg')"
+        'SignInBg': "url('/SignInBg.jpg')",
+        'RegisterBg': "url('/RegisterBg.webp')",
       },
       padding: {
         "1vh": "1vh",
