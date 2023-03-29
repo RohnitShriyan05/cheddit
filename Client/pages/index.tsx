@@ -6,5 +6,6 @@ export default function Home() {
     <div className="bg-primaryDark h-screen w-full">
      <Navbar/>
     </div>
+    
   )
 }
