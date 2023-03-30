@@ -141,6 +141,9 @@ module.exports = {
         "30vh": "30vh",
         "50vh":"50vh"
       },
+      transitionProperty: {
+        height: 'height'
+      },
     },
     
   },

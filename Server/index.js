@@ -4,4 +4,6 @@ const app = express();
 app.get("/", (req, res)=>{
     res.send("hellow work")
 })
-app.listen(8000);
+app.listen(8000, function(){
+    console.log("url: http://localhost:8000");
+});
