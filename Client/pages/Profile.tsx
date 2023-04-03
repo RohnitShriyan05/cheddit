@@ -1,3 +1,4 @@
+import { Post } from "@/components/Post";
 import {FC} from "react";
 import { BsChevronDoubleDown, BsPerson, BsSun } from "react-icons/bs";
 
@@ -12,7 +13,7 @@ const Profile: FC = ()=>{
                     <BsSun className="mr-1"/> Sort <BsChevronDoubleDown className="ml-2 text-xs"/>
                 </div>
                 <div className="w-full h-full bg-red-100">
-
+                    <Post/>
                 </div>
             </div>
         </div>
