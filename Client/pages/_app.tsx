@@ -4,7 +4,7 @@ import { Navbar } from '@/components/Navbar'
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <div className=''>
-      <Navbar className="fixed"/>
+      <Navbar/>
       <Component {...pageProps} />
     </div>
   )
