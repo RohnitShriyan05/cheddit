@@ -8,11 +8,11 @@ const Profile: FC = ()=>{
             <BsPerson className="text-5xl"/>
             <p className="text-2xl font-bold">u/rohnitshriyan</p>
             <p className="text-sm py-2">146 Karma | 3yrs on Cheddit</p>
-            <div className="flex-1 lg:w-1/2 w-full lg:px-0 px-5vw">
+            <div className="flex-1 lg:w-1/4 w-full lg:px-0 px-5vw">
                 <div className="w-full flex items-center py-2">
                     <BsSun className="mr-1"/> Sort <BsChevronDoubleDown className="ml-2 text-xs"/>
                 </div>
-                <div className="w-full h-full bg-red-100">
+                <div className="w-full h-full">
                     <Post/>
                 </div>
             </div>
