@@ -4,7 +4,7 @@ import { BsChevronDoubleDown, BsPerson, BsSun } from "react-icons/bs";
 
 const Profile: FC = ()=>{
     return(
-        <div className="text-white h-screen w-full bg-primaryDark flex flex-col items-center justify-center py-2vh">
+        <div className="text-white h-max w-full bg-primaryDark flex flex-col items-center justify-center py-10vh overflow-scroll">
             <BsPerson className="text-5xl"/>
             <p className="text-2xl font-bold">u/rohnitshriyan</p>
             <p className="text-sm py-2">146 Karma | 3yrs on Cheddit</p>
@@ -13,6 +13,8 @@ const Profile: FC = ()=>{
                     <BsSun className="mr-1"/> Sort <BsChevronDoubleDown className="ml-2 text-xs"/>
                 </div>
                 <div className="w-full h-full">
+                    <Post/>
+                    <Post/>
                     <Post/>
                 </div>
             </div>

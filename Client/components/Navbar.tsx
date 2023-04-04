@@ -8,7 +8,7 @@ import Link from "next/link";
 export const Navbar = () => {
     const [isOpen, setOpen] = useState(false)
     return (
-        <nav className="w-full bg-primary">
+        <nav className="w-full bg-primary absolute top-0 z-40">
             <ul className="w-full flex items-center justify-center lg:px-1vw px-2vw lg:text-xl text-lg py-2 text-white">
                 <li>
                     <Link href={"/"} className="flex items-center"><GiCheeseWedge className="text-secondary text-3xl" /><span className="sm:block hidden pl-1">Cheddit</span></Link>
