@@ -3,15 +3,15 @@ import { CgProfile } from "react-icons/cg";
 import { BiSearchAlt } from "react-icons/bi";
 import { BsToggleOff, BsFlag } from "react-icons/bs";
 import { Fade as Hamburger } from 'hamburger-react';
-import { useState } from "react";
+import { useState, FC } from "react";
 import Link from "next/link";
-export const Navbar = () => {
+export const Navbar : FC = () => {
     const [isOpen, setOpen] = useState(false)
     return (
         <nav className="w-full fixed top-0 z-40">
             <ul className="xl:max-h-16 lg:max-h-14 max-h-12 h-max w-full bg-primary flex items-center justify-center lg:px-1vw px-2vw lg:text-xl text-lg py-2 text-white">
                 <li>
-                    <Link href={"/"} className="flex items-center"><GiCheeseWedge className="text-secondary text-3xl" /><span className="sm:block hidden pl-1">Cheddit</span></Link>
+                    <Link href={"/"} className="flex items-center w-full"><GiCheeseWedge className="text-secondary text-3xl" /><span className="sm:block hidden pl-1">Cheddit</span></Link>
                 </li>
                 <li className="flex-1"></li>
                 <li className="absolute left-1/2 transform -translate-x-1/2 flex justify-center ">

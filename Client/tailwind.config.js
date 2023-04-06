@@ -18,6 +18,7 @@ module.exports = {
       backgroundImage: {
         'SignInBg': "url('/SignInBg.jpg')",
         'RegisterBg': "url('/RegisterBg.webp')",
+        'CreatePostBg': "url('/CreatePostBg.jpg')",
       },
       padding: {
         "1vh": "1vh",
