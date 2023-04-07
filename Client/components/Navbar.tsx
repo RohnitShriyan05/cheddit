@@ -1,7 +1,7 @@
 import { GiCheeseWedge, GiPlagueDoctorProfile } from "react-icons/gi";
 import { CgProfile } from "react-icons/cg";
 import { BiSearchAlt } from "react-icons/bi";
-import { BsToggleOff, BsFlag } from "react-icons/bs";
+import { BsFlag, BsBookmarks } from "react-icons/bs";
 import { Fade as Hamburger } from 'hamburger-react';
 import { useState, FC } from "react";
 import Link from "next/link";
@@ -31,7 +31,7 @@ export const Navbar : FC = () => {
                     </Link>
                 </li>
                 <li onClick={()=>setOpen(!isOpen)} className="flex items-center pb-3">
-                    <BsToggleOff className="mr-1 text-xl" /> Dark Mode
+                    <BsBookmarks className="mr-1 text-xl" /> Saved
                 </li>
                 <li onClick={()=>setOpen(!isOpen)} className="flex items-center">
                     <BsFlag className="mr-1 text-xl" />

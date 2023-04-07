@@ -24,7 +24,7 @@ const Register : FC = ()=>{
                 PASSWORD<span className="text-red-600 text-xs">*</span>
               </label>
               <input
-                type="text"
+                type="password"
                 name="PASSWORD"
                 className="bg-primaryDark w-full mx-3vw text-lg h-10 px-2 border border-neutral-500"
               ></input>
@@ -34,7 +34,7 @@ const Register : FC = ()=>{
                 CONFIRM PASSWORD<span className="text-red-600 text-xs">*</span>
               </label>
               <input
-                type="text"
+                type="password"
                 name="PASSWORD"
                 className="bg-primaryDark w-full mx-3vw text-lg h-10 px-2 border border-neutral-500"
               ></input>

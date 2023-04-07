@@ -9,7 +9,7 @@ export const Footer : FC = () => {
                     <Link href={"/"} className="flex items-center"><BiHomeAlt2 /></Link>
                 </li>
                 <li className="mx-5vw">
-                    <Link href={"/CreatePost"}><BiPlus /></Link>
+                    <Link href={"/CreatePost/Text"}><BiPlus /></Link>
                 </li>
                 <li>
                     <Link href={"/Profile"}><BiBell /></Link>
