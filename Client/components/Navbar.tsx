@@ -6,7 +6,8 @@ import { Fade as Hamburger } from 'hamburger-react';
 import { useState, FC } from "react";
 import Link from "next/link";
 export const Navbar : FC = () => {
-    const [isOpen, setOpen] = useState(false)
+    const [isOpen, setOpen] = useState(false);
+    const [isSearch, setSearch] = useState(false);
     return (
         <nav className="w-full fixed top-0 z-40">
             <ul className="xl:max-h-16 lg:max-h-14 max-h-12 h-max w-full bg-primary flex items-center justify-center lg:px-1vw px-2vw lg:text-xl text-lg py-2 text-white">
@@ -14,8 +15,9 @@ export const Navbar : FC = () => {
                     <Link href={"/"} className="flex items-center w-full"><GiCheeseWedge className="text-secondary text-3xl" /><span className="sm:block hidden pl-1">Cheddit</span></Link>
                 </li>
                 <li className="flex-1"></li>
-                <li className="absolute left-1/2 transform -translate-x-1/2 flex justify-center ">
-                    <button className="w-max text-neutral-500 items-center flex px-10vw rounded-full border border-secondary"><BiSearchAlt /> Search</button>
+                <li className={`absolute left-1/2 lg:w-1/3 md:w-1/2 transform -translate-x-1/2 flex justify-center items-center bg-primary px-3 text-neutral-500 rounded-full border ${isSearch ? "border-secondary":"border-neutral-500"}`}>
+                    <input className="flex-1 bg-primary px-2" onFocus={()=>setSearch(true)} onBlur={()=>setSearch(false)}/>
+                    <BiSearchAlt className="text-white"/>
                 </li>
                 <li className="lg:block hidden">
                     <Link href={"/Profile"}><GiPlagueDoctorProfile className="text-secondary bg-black rounded-full text-3xl" /></Link>
