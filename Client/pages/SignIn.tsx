@@ -31,7 +31,7 @@ const SignIn : FC = ()=> {
             </div>
             <button className="bg-secondary w-full h-10">Sign In</button>
             <p className="text-xs py-2vh">
-              Don't have an account yet?{" "}
+              Dont have an account yet?{" "}
               <Link href="/Register" className="text-sky-500">Register</Link>
             </p>
             <p className="w-full text-center py-2vh">OR</p>
